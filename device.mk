@@ -40,7 +40,8 @@ PRODUCT_PACKAGES += \
     ArrowSystemUIDubai \
     SettingsResDubai \
     SettingsProviderResDubai \
-    SystemUIResDubai
+    SystemUIResDubai \
+    WifiResDubai
 
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-arrow
