@@ -2,5 +2,9 @@
   {
     "repository": "android_device_motorola_sm7325-common",
     "target_path": "device/motorola/sm7325-common"
+  },
+  {
+    "repository": "android_vendor_motorola_dubai",
+    "target_path": "vendor/motorola/dubai"
   }
 ]
