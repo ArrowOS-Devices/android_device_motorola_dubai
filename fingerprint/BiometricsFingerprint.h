@@ -17,7 +17,10 @@
 #ifndef ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_3_BIOMETRICSFINGERPRINT_H
 #define ANDROID_HARDWARE_BIOMETRICS_FINGERPRINT_V2_3_BIOMETRICSFINGERPRINT_H
 
+#include <android/binder_manager.h>
 #include <android/hardware/biometrics/fingerprint/2.3/IBiometricsFingerprint.h>
+#include <aidl/android/hardware/power/IPower.h>
+#include <aidl/android/hardware/power/Mode.h>
 #include <hidl/MQDescriptor.h>
 #include <hidl/Status.h>
 #include <com/motorola/hardware/biometric/fingerprint/1.0/IMotoFingerPrint.h>
@@ -29,6 +32,8 @@ namespace fingerprint {
 namespace V2_3 {
 namespace implementation {
 
+using ::aidl::android::hardware::power::IPower;
+using ::aidl::android::hardware::power::Mode;
 using IBiometricsFingerprint_2_1 = ::android::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprint;
 using ::android::hardware::biometrics::fingerprint::V2_1::IBiometricsFingerprintClientCallback;
 using ::android::hardware::biometrics::fingerprint::V2_1::RequestStatus;
@@ -65,6 +70,7 @@ struct BiometricsFingerprint : public IBiometricsFingerprint {
 private:
     sp<IBiometricsFingerprint_2_1> biometrics_2_1_service;
     sp<IMotoFingerPrint> mMotoFingerprint;
+    std::shared_ptr<IPower> mPowerService;
 };
 
 }  // namespace implementation
