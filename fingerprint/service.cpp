@@ -21,6 +21,7 @@
 
 using android::hardware::configureRpcThreadpool;
 using android::hardware::joinRpcThreadpool;
+using android::hardware::setMinSchedulerPolicy;
 
 using android::hardware::biometrics::fingerprint::V2_3::IBiometricsFingerprint;
 using android::hardware::biometrics::fingerprint::V2_3::implementation::BiometricsFingerprint;
@@ -32,6 +33,7 @@ int main() {
     android::sp<IBiometricsFingerprint> service = new BiometricsFingerprint();
 
     configureRpcThreadpool(1, true);
+    setMinSchedulerPolicy(service, SCHED_NORMAL, -20);
 
     status_t status = service->registerAsService();
     if (status != OK) {
