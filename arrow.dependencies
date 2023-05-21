@@ -10,5 +10,11 @@
   {
     "repository": "android_vendor_motorola_dubai",
     "target_path": "vendor/motorola/dubai"
+  },
+  {
+    "repository": "ArrowOS-Devices/proprietary_vendor_motorola_firmware",
+    "target_path": "vendor/motorola/firmware",
+    "remote": "arrow-gitlab",
+    "branch": "arrow-13.1"
   }
 ]
