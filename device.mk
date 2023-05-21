@@ -41,6 +41,9 @@ PRODUCT_PACKAGES += \
     SettingsProviderResDubai \
     SystemUIResDubai
 
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-arrow
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/sku_yupik/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_yupik/audio_platform_info.xml \
@@ -53,6 +56,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    Aperture \
     libgui_shim_vendor
 
 # Display
