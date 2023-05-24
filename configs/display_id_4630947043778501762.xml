@@ -1,5 +1,55 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes' ?>
 <displayConfiguration>
+    <screenBrightnessMap>
+        <point>
+            <value>0.00366300</value>
+            <nits>2.0</nits>
+        </point>
+        <point>
+            <value>0.01346070</value>
+            <nits>7.0</nits>
+        </point>
+        <point>
+            <value>0.01682588</value>
+            <nits>10.0</nits>
+        </point>
+        <point>
+            <value>0.02019105</value>
+            <nits>12.0</nits>
+        </point>
+        <point>
+            <value>0.04038210</value>
+            <nits>24.0</nits>
+        </point>
+        <point>
+            <value>0.16152841</value>
+            <nits>95.0</nits>
+        </point>
+        <point>
+            <value>0.19181498</value>
+            <nits>111.0</nits>
+        </point>
+        <point>
+            <value>0.25575331</value>
+            <nits>149.0</nits>
+        </point>
+        <point>
+            <value>0.32978716</value>
+            <nits>192.0</nits>
+        </point>
+        <point>
+            <value>0.43410759</value>
+            <nits>252.0</nits>
+        </point>
+        <point>
+            <value>0.85811965</value>
+            <nits>500.0</nits>
+        </point>
+        <point>
+            <value>1.0</value>
+            <nits>700.0</nits>
+        </point>
+    </screenBrightnessMap>
     <highBrightnessMode enabled="true">
         <transitionPoint>0.85811965</transitionPoint> <!-- 3514/4095 -->
         <minimumLux>6500</minimumLux>
