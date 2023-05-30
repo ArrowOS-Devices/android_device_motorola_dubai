@@ -2,56 +2,56 @@
 <displayConfiguration>
     <screenBrightnessMap>
         <point>
-            <value>0.00366300</value>
+            <value>0.00219780</value>
             <nits>2.0</nits>
         </point>
         <point>
-            <value>0.01346070</value>
+            <value>0.00934538</value>
             <nits>7.0</nits>
         </point>
         <point>
-            <value>0.01682588</value>
+            <value>0.01363393</value>
             <nits>10.0</nits>
         </point>
         <point>
-            <value>0.02019105</value>
+            <value>0.01649296</value>
             <nits>12.0</nits>
         </point>
         <point>
-            <value>0.04038210</value>
+            <value>0.03364715</value>
             <nits>24.0</nits>
         </point>
         <point>
-            <value>0.16152841</value>
+            <value>0.13514277</value>
             <nits>95.0</nits>
         </point>
         <point>
-            <value>0.19181498</value>
+            <value>0.15801506</value>
             <nits>111.0</nits>
         </point>
         <point>
-            <value>0.25575331</value>
+            <value>0.21233667</value>
             <nits>149.0</nits>
         </point>
         <point>
-            <value>0.32978716</value>
+            <value>0.27380586</value>
             <nits>192.0</nits>
         </point>
         <point>
-            <value>0.43410759</value>
+            <value>0.35957682</value>
             <nits>252.0</nits>
         </point>
         <point>
-            <value>0.85811965</value>
+            <value>0.85811967</value>
             <nits>500.0</nits>
         </point>
         <point>
-            <value>1.0</value>
+            <value>1.00000000</value>
             <nits>700.0</nits>
         </point>
     </screenBrightnessMap>
     <highBrightnessMode enabled="true">
-        <transitionPoint>0.85811965</transitionPoint> <!-- 3514/4095 -->
+        <transitionPoint>0.85811967</transitionPoint> <!-- 3514/4095 -->
         <minimumLux>6500</minimumLux>
         <timing>
             <timeWindowSecs>0</timeWindowSecs>
