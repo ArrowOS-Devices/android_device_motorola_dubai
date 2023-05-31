@@ -58,6 +58,7 @@ PRODUCT_COPY_FILES += \
 # Camera
 PRODUCT_PACKAGES += \
     Aperture \
+    DubaiCameraService \
     libgui_shim_vendor
 
 # Display
