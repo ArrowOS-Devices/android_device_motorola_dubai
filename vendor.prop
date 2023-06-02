@@ -4,6 +4,10 @@ bluetooth.device.default_name=motorola edge 30
 # Camera
 persist.vendor.camera.physical.num=4
 
+# Dolby
+persist.vendor.audio_fx.current=dolby
+ro.vendor.dolby.dax.version=DAX3_3.8.5.20_r1
+
 # Motorola
 ro.mot.build.customerid=global
 

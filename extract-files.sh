@@ -8,6 +8,9 @@
 
 function blob_fixup() {
     case "${1}" in
+        vendor/etc/dolby/dax-default.xml)
+            sed -i 's|volume-leveler-enable value="true"|volume-leveler-enable value="false"|g' "${2}"
+            ;;
         vendor/lib64/libmot_chi_desktop_helper.so)
             ${PATCHELF} --replace-needed "libgui_vendor.so" "libgui_shim_vendor.so" "${2}"
             ;;
